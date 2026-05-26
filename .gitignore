@@ -1,0 +1,61 @@
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+Unity/
+brain
+
+# --- Claude Code local / private ---
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/learned/
+.claude/knowledge/
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.bak
+
+# --- Working state (regenerated per session) ---
+production/session-state/*.bak
+production/session-logs/
+
+# --- Unity (when prototypes contain a Unity project) ---
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.meta.bak
+sysinfo.txt
+crashlytics-build.properties
+
+# --- Binary asset bloat (placeholder art only; final art tracked via LFS if needed) ---
+assets/**/*.psd
+assets/**/*.ai
+assets/**/*.blend
+assets/**/*.fbx.import
