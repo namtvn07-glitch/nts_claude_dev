@@ -8,6 +8,7 @@ desktop.ini
 .idea/
 Unity/
 brain
+code-templates
 
 # --- Claude Code local / private ---
 CLAUDE.local.md

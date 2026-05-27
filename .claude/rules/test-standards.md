@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/Tests/**"
+  - "Unity/*/Assets/Scripts/Tests/**"
 ---
 
 # Test Standards (Unity / NUnit)

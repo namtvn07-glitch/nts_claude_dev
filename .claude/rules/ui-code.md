@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/UI/**"
+  - "Unity/*/Assets/Scripts/UI/**"
 ---
 
 # UI Code Rules (Unity)

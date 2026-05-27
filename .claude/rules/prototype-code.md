@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/**"
+  - "Unity/*/Assets/Scripts/**"
 ---
 
 # Production Code Rules

@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/Gameplay/**"
+  - "Unity/*/Assets/Scripts/Gameplay/**"
 ---
 
 # Gameplay Code Rules (Unity)

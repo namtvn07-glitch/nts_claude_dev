@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/Core/**"
+  - "Unity/*/Assets/Scripts/Core/**"
 ---
 
 # Core Engine Code Rules (Unity)

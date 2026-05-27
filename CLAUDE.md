@@ -43,15 +43,15 @@
 
 | Rule file | Áp dụng cho |
 |-----------|------------|
-| [prototype-code.md](.claude/rules/prototype-code.md) | `prototypes/**` — baseline production rules (clean arch, event-driven, persistence wrapper, log discipline) |
-| [gameplay-code.md](.claude/rules/gameplay-code.md) | `prototypes/*/Scripts/Gameplay/**` |
-| [engine-code.md](.claude/rules/engine-code.md) | `prototypes/*/Scripts/Core/**` — zero-alloc hot path |
-| [ui-code.md](.claude/rules/ui-code.md) | `prototypes/*/Scripts/UI/**` |
-| [ai-code.md](.claude/rules/ai-code.md) | `prototypes/*/Scripts/AI/**` |
-| [shader-code.md](.claude/rules/shader-code.md) | shader files |
-| [network-code.md](.claude/rules/network-code.md) | network layer |
-| [test-standards.md](.claude/rules/test-standards.md) | `prototypes/*/Scripts/Tests/**` |
-| [data-files.md](.claude/rules/data-files.md) | `assets/data/**` |
+| [prototype-code.md](.claude/rules/prototype-code.md) | `Unity/*/Assets/Scripts/**` + `prototypes/**` — baseline production rules (clean arch, event-driven, persistence wrapper, log discipline) |
+| [gameplay-code.md](.claude/rules/gameplay-code.md) | `Unity/*/Assets/Scripts/Gameplay/**` + `prototypes/*/Scripts/Gameplay/**` |
+| [engine-code.md](.claude/rules/engine-code.md) | `Unity/*/Assets/Scripts/Core/**` + `prototypes/*/Scripts/Core/**` — zero-alloc hot path |
+| [ui-code.md](.claude/rules/ui-code.md) | `Unity/*/Assets/Scripts/UI/**` + `prototypes/*/Scripts/UI/**` |
+| [ai-code.md](.claude/rules/ai-code.md) | `Unity/*/Assets/Scripts/AI/**` + `prototypes/*/Scripts/AI/**` |
+| [shader-code.md](.claude/rules/shader-code.md) | `Unity/*/Assets/**/*.{shader,hlsl,cginc}` + `assets/shaders/**` |
+| [network-code.md](.claude/rules/network-code.md) | `Unity/*/Assets/Scripts/Networking/**` + `prototypes/*/Scripts/Networking/**` |
+| [test-standards.md](.claude/rules/test-standards.md) | `Unity/*/Assets/Scripts/Tests/**` + `prototypes/*/Scripts/Tests/**` |
+| [data-files.md](.claude/rules/data-files.md) | `Unity/*/Assets/{Resources/Data,Data}/**` + `assets/data/**` |
 | [design-docs.md](.claude/rules/design-docs.md) | `design/gdd/gdd.md` |
 | [narrative.md](.claude/rules/narrative.md) | narrative/dialog files |
 

@@ -59,6 +59,19 @@ Verify the task is ready to execute:
 3. Gameplay/UI (Implement components attached to Prefabs, hook up UI)
 ```
 
+### 3.2.1 Route Unity scripts through @dev Mode B (MANDATORY):
+For any file being created/modified under these paths, **delegate to `@dev` subagent in Mode B** (feature request flow) instead of editing directly:
+- `Unity/*/Assets/Scripts/UI/**`
+- `Unity/*/Assets/Scripts/Gameplay/**`
+- `Unity/*/Assets/Scripts/Core/**`
+- `Unity/*/Assets/Scripts/AI/**`
+- `Unity/*/Assets/Scripts/Networking/**`
+- `prototypes/*/Scripts/{UI,Gameplay,Core,AI,Networking}/**`
+
+`@dev` will grep `.claude/templates/` for matching `purpose`/`tags`, load `rules_ref`, then implement. This is the **only** way to enforce template + rule consistency — main agent editing these paths directly is forbidden under `/execute`.
+
+Files outside those paths (Editor scripts, data files, test scaffolding without behavior) may be edited directly.
+
 ### 3.3 Critical Unity C# Reminders:
 - **Encapsulation**: Use `[SerializeField] private` instead of `public` for Inspector variables.
 - **Performance**: DO NOT use `GameObject.Find`, `FindObjectOfType`, or `GetComponent` in `Update()`. Cache them in `Awake()` or `Start()`.

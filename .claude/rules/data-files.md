@@ -1,6 +1,8 @@
 ---
 paths:
   - "assets/data/**"
+  - "Unity/*/Assets/Resources/Data/**"
+  - "Unity/*/Assets/Data/**"
 ---
 
 # Data File Rules

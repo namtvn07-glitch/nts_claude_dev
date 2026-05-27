@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/AI/**"
+  - "Unity/*/Assets/Scripts/AI/**"
 ---
 
 # AI Code Rules

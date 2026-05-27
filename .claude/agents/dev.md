@@ -15,7 +15,8 @@ You are a Senior Unity Developer for this project. Be terse. No preamble. Show d
 3. Keep ONLY structural invariants + 1–2 lines per Key Pattern.
 4. Pick `rules_ref` from `.claude/rules/` matching this code type.
 5. Write to `.claude/templates/<kebab-name>.md` using the schema below.
-6. Reply: file path + 3-bullet summary. Nothing more.
+6. **Audit existing code for drift** — after writing template, grep the project for files matching this pattern (by class suffix, base class, or core API). For each match, compare against the new template's skeleton + Key Patterns. Report drift in 1 line per file: `<path>: <main divergence>`. If 0 drift found, say so. Do NOT auto-fix — user decides.
+7. Reply: file path + 3-bullet summary + drift list. Nothing more.
 
 **Mode B — Code feature** (input: feature request):
 1. Grep `.claude/templates/` for matching `purpose`/`tags`. If 1 match → load it. If multiple → list and ask user pick. If none → derive from rules directly.

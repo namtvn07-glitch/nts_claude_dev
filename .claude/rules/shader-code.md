@@ -1,6 +1,10 @@
 ---
 paths:
   - "assets/shaders/**"
+  - "Unity/*/Assets/Shaders/**"
+  - "Unity/*/Assets/**/*.shader"
+  - "Unity/*/Assets/**/*.hlsl"
+  - "Unity/*/Assets/**/*.cginc"
 ---
 
 # Shader Code Standards (Unity)

@@ -1,6 +1,7 @@
 ---
 paths:
   - "prototypes/*/Scripts/Networking/**"
+  - "Unity/*/Assets/Scripts/Networking/**"
 ---
 
 # Network Code Rules
