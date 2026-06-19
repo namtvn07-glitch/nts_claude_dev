@@ -32,6 +32,7 @@
 | `/review` | Code review trước commit (Unity C# convention, perf, leak) |
 | `/commit` | Conventional Commits + chờ user xác nhận 1/2/3 |
 | `/teach` | Debrief 9-phần kiểu "giảng bài bên cafe" |
+| `/publish-gdd` | Sinh `gdd-sheet.html`/`index.html` từ `gdd-sheet.md` → commit lên repo publish local (path ở `CLAUDE.local.md`, không push) |
 
 ## Subagent
 
