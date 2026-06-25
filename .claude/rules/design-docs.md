@@ -1,6 +1,6 @@
 ﻿---
 paths:
-  - "design/gdd/gdd.md"
+  - "Unity/design/gdd/gdd.md"
 ---
 
 # Design Document Rules

@@ -47,11 +47,11 @@ If the user only says "build game X", ask before researching:
 // turbo
 Read SSOT files first to avoid duplicate patterns and missed coverage:
 
-- [Unity/trg36-bubbleshoot/Assets/](../../Unity/trg36-bubbleshoot/Assets/) — existing scenes/prefabs
+- `Unity/*/Assets/` (the project under `Unity/`) — existing scenes/prefabs
 - `prototypes/*/` (if any) — reusable older patterns
 - [.claude/templates/](../../.claude/templates/) — templates already extracted by `@dev`
 - [.claude/rules/](../../.claude/rules/) — which rule globs apply to which feature
-- `design/gdd/gdd.md` (if exists) — verify the 6 mandatory sections
+- `Unity/design/gdd/gdd.md` (if exists) — verify the 6 mandatory sections
 
 ## Step 4: Decompose into a Feature tree
 

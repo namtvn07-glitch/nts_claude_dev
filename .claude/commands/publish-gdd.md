@@ -4,7 +4,7 @@ description: Render gdd-sheet.md → gdd-sheet.html + <repo>/index.html, then gi
 
 # /publish-gdd
 
-Render `design/gdd/gdd-sheet/gdd-sheet.md` (SSOT) qua template self-contained → ghi `gdd-sheet.html` (preview) + `<repo>/index.html`, rồi commit trong repo đích. **Không push.** Mọi git dùng `git -C <repo>` (không `cd`, không đụng repo TRG36).
+Render `Unity/design/gdd/gdd-sheet/gdd-sheet.md` (SSOT) qua template self-contained → ghi `gdd-sheet.html` (preview) + `<repo>/index.html`, rồi commit trong repo đích. **Không push.** Mọi git dùng `git -C <repo>` (không `cd`, không đụng repo nguồn hiện tại).
 
 **Rule — update in-place:** nếu `index.html`/`gdd-sheet.html` đã tồn tại thì đây là thao tác UPDATE — ghi đè nội dung mới từ `.md`, **giữ nguyên template/style**, KHÔNG dựng lại từ đầu. Không đổi `.md` ⇒ skip commit.
 
@@ -15,9 +15,9 @@ Một script làm hết: resolve repo từ `CLAUDE.local.md` → guard → rende
 python - <<'PY'
 import html, re, sys, pathlib
 ROOT = pathlib.Path('.')
-SRC  = ROOT/'design/gdd/gdd-sheet/gdd-sheet.md'
+SRC  = ROOT/'Unity/design/gdd/gdd-sheet/gdd-sheet.md'
 TPL  = ROOT/'.claude/templates/gdd-sheet-page.html'
-OUT  = ROOT/'design/gdd/gdd-sheet/gdd-sheet.html'
+OUT  = ROOT/'Unity/design/gdd/gdd-sheet/gdd-sheet.html'
 from datetime import date; DATE = date.today().isoformat()
 
 m = re.search(r'GDD publish repo:[*\s]*`([^`]+)`', (ROOT/'CLAUDE.local.md').read_text(encoding='utf-8'))  # nuốt markdown bold **
