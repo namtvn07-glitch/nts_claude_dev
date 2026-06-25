@@ -4,6 +4,7 @@ purpose: Abstract MonoBehaviour data-manager base + Serializable user-data POCO 
 when_to_use: Any project needing a persistent user-progression store (session count, currency, unlocks) loaded once on startup
 rules_ref: [prototype-code, gameplay-code]
 tags: [persistence, save, data, mono]
+requires_plugins: [Easy Save 3]   # ES3 — verify imported before use; STOP-and-warn if missing
 ---
 
 ## Skeleton

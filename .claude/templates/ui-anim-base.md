@@ -4,6 +4,7 @@ purpose: Standalone DOTween-based UI element with Show/Hide animation (localPosi
 when_to_use: Any RectTransform that needs inspector-tunable animate-in / animate-out without dialog stack management.
 rules_ref: [ui-code]
 tags: [ui, dotween, animation, mono]
+requires_plugins: [DOTween]   # verify imported before use; STOP-and-warn if missing
 ---
 
 ## Skeleton

@@ -4,6 +4,7 @@ purpose: Abstract Dialog base (RectTransform + CanvasGroup, DOTween FadeIn/Slide
 when_to_use: Any full-screen or panel dialog that needs pooled lifecycle, stack management via MenuManager, and type-safe static accessors.
 rules_ref: [ui-code]
 tags: [ui, dotween, dialog, pool, generic, singleton, stack, animation]
+requires_plugins: [DOTween]   # verify imported before use; STOP-and-warn if missing
 ---
 
 ## Skeleton
